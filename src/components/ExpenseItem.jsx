@@ -1,7 +1,17 @@
-import React from "react";
-
-const ExpenseItem = () => {
-  return <div>ExpenseItem</div>;
-};
+import "./ExpenseItem.css";
+function ExpenseItem() {
+  const expenseDate = new Date(2021, 2, 28);
+  const expenseTitle = "Markets";
+  const expenseAmount = 300.0;
+  return (
+    <div className="expense-item ">
+      <div> {expenseDate.toISOString()}</div>
+      <div className="expense-item__description">
+        <h2>{expenseTitle}</h2>
+        <div className="expense-item__price">${expenseAmount}</div>
+      </div>
+    </div>
+  );
+}
 
 export default ExpenseItem;
