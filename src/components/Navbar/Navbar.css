@@ -20,7 +20,7 @@ header {
   justify-content: space-between;
   height: 80px;
   padding: 0 2rem;
-  background-color: var(--mainColor);
+  background-color: #2c3d56;
   color: var(--textColor);
 }
 
