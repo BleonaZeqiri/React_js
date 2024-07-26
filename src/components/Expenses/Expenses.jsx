@@ -1,23 +1,44 @@
-import React from "react";
-import Card from "../UI/Card";
+import React, { useState } from "react";
+import ExpensesFilter from "./ExpensesFilter";
 import ExpenseItem from "./ExpenseItem";
+import Card from "../UI/Card";
 
 import "./Expenses.css";
 
 const Expenses = ({ items }) => {
+  const [filteredYear, setFilteredYear] = useState("2020");
+  let filterInfoText = "2019,2021&2022";
+
+  if (filteredYear === "2019") {
+    filterInfoText = "2020,2021&2022";
+  } else if (filteredYear === "2021") {
+    filterInfoText = "2019,2020&2022";
+  } else {
+    filterInfoText = "2019,2020&2021";
+  }
+  const filterChangeHandler = (selectedYear) => {
+    setFilteredYear(selectedYear);
+  };
   return (
-    <Card className="expenses">
-      {items?.map((expense, index) => {
-        return (
-          <ExpenseItem
-            key={`expenseItem-${index}`}
-            title={expense.title}
-            amount={expense.amount}
-            date={expense.date}
-          />
-        );
-      })}
-    </Card>
+    <div>
+      <Card className="expenses">
+        <ExpensesFilter
+          selected={filteredYear}
+          onChangeFilter={filterChangeHandler}
+        />
+        <p>data {filterInfoText} is hidden</p>
+        {items?.map((expense, index) => {
+          return (
+            <ExpenseItem
+              key={`expenseItem-${index}`}
+              title={expense.title}
+              amount={expense.amount}
+              date={expense.date}
+            />
+          );
+        })}
+      </Card>
+    </div>
   );
 };
 

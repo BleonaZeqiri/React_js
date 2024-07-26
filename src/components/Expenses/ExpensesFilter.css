@@ -1,0 +1,33 @@
+.expenses-filter {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: white;
+}
+
+.expenses-filter__control {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expenses-filter__control label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.expenses-filter__control select {
+  font: inherit;
+  padding: 0.5rem;
+  font-weight: bold;
+  border-radius: 6px;
+  background-color: #1e2c41;
+  color: white;
+  border: 1px solid white;
+}
+.card p {
+  color: white;
+}
