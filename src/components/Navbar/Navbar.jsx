@@ -24,7 +24,9 @@ function Navbar() {
         <Link to="/about" onClick={closeNavbar}>
           About
         </Link>
-
+        <Link to="/first-task" onClick={closeNavbar}>
+          FirstTask
+        </Link>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
         </button>

@@ -1,0 +1,27 @@
+.Items {
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+}
+.box {
+  width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 38px;
+}
+.box > * {
+  width: 260px;
+  display: flex;
+  gap: 12px;
+}
+img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 35px;
+  padding: 6px;
+  margin: 5px 0px;
+}
+p {
+  font-size: 12px;
+}
