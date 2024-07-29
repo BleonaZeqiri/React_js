@@ -1,6 +1,6 @@
 import React from "react";
-import Card from "../UI/Card.jsx";
 import ExpenseDate from "./ExpenseDate.jsx";
+import Card from "../UI/Card.jsx";
 
 import "./ExpenseItem.css";
 

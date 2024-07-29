@@ -22,8 +22,11 @@
 .new-expense__actions {
   text-align: right;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 600px) {
   .new-expense__control {
-    max-width: 95%;
+    max-width: 100%;
+  }
+  .new-expense__control input {
+    width: 37rem;
   }
 }
