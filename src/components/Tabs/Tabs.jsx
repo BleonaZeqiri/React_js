@@ -1,4 +1,3 @@
-// src/components/Tabs/Tabs.js
 import React from "react";
 import "./Tabs.css";
 

@@ -1,0 +1,52 @@
+.wrapper {
+  background-color: rgb(245, 245, 245);
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion {
+  width: 1000px;
+  margin: 60px 0px;
+}
+
+.item {
+  background: white;
+  margin-bottom: 5px;
+  border: 1px solid #d6d6d6;
+  border-radius: 6px;
+  padding: 10px 20px;
+}
+
+.title {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.title h4 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.content {
+  color: rgb(113 110 110);
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.content.show {
+  max-height: 1000px;
+}
+hr {
+  margin: 12px 0px;
+
+  border: 0.5px solid rgb(231 226 226);
+}
+.images {
+  border: none;
+  padding: 0;
+  margin: 0;
+}

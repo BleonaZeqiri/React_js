@@ -72,8 +72,12 @@
   border-radius: 4px;
   margin-top: auto;
   background: white;
+  cursor: pointer;
 }
-
+.Cards-tabs__items button:hover {
+  background: #0066b2;
+  color: white;
+}
 @media only screen and (max-width: 600px) {
   .Cards-tabs {
     grid-template-columns: 1fr;

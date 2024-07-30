@@ -1,4 +1,3 @@
-// src/components/Tabs/Tab.js
 import React from "react";
 
 const Tab = ({ aKey, tabTitle, cards }) => {
