@@ -27,6 +27,9 @@ function Navbar() {
         <Link to="/first-task" onClick={closeNavbar}>
           FirstTask
         </Link>
+        <Link to="/second-task" onClick={closeNavbar}>
+          SecondTask
+        </Link>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
         </button>

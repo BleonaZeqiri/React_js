@@ -1,5 +1,7 @@
+/* FileList.css */
 .File__list {
-  width: 900px;
+  width: 90%;
+  max-width: 900px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 100px auto;
@@ -11,10 +13,14 @@
   border-radius: 6px;
   height: 300px;
   padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-content__section {
   display: flex;
+  align-items: center;
   margin-top: 6px;
 }
 
@@ -67,7 +73,9 @@
   border: 2px solid #28acd6;
   border-radius: 24px;
   color: #28acd6;
+  transition: background-color 0.3s, color 0.3s;
 }
+
 .card-content__button:hover {
   background-color: #28acd6;
   color: white;
@@ -75,6 +83,8 @@
 
 .card-content__p {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-content__p p {
@@ -83,21 +93,34 @@
   margin-right: 4px;
 }
 
-@media only screen and (max-width: 600px) {
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 1200px) {
   .File__list {
-    width: 370px;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 601px) {
+  .File__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-content {
+    height: auto;
+    padding: 12px;
   }
 
   .card-content__section div {
+    width: auto;
     height: auto;
     font-size: 14px;
     margin: 5px 0;
+    padding: 4px;
   }
 
   .card-content__section img {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
   }
 
   .card-content__section p {
@@ -105,7 +128,45 @@
   }
 
   .card-content__p p {
-    font-size: 16px;
-    margin-right: 6px;
+    font-size: 14px;
+    margin-right: 4px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .File__list {
+    grid-template-columns: 1fr;
+  }
+
+  .card-content {
+    height: auto;
+    padding: 10px;
+  }
+
+  .card-content__button {
+    width: 100px;
+    height: 35px;
+  }
+
+  .card-content__section div {
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    margin: 5px 0;
+    padding: 4px;
+  }
+
+  .card-content__section img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .card-content__section p {
+    font-size: 14px;
+  }
+
+  .card-content__p p {
+    font-size: 14px;
+    margin-right: 4px;
   }
 }

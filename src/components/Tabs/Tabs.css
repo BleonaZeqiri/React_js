@@ -1,0 +1,86 @@
+.tabs-container {
+  width: 90%;
+  max-width: 1000px;
+  padding: 40px 0px;
+  margin: auto;
+}
+
+.tabs {
+  display: flex;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+.tab-item {
+  padding: 10px;
+  margin-right: 18px;
+  font-size: 13px;
+}
+
+.tab-item.active {
+  border-bottom: 1px solid #3786b0;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+.second-task {
+  background-color: rgb(245, 245, 245);
+}
+
+.Cards-tabs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 30px auto;
+  gap: 25px;
+}
+
+.Cards-tabs__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+  padding: 18px;
+  background: white;
+  height: 205px;
+}
+
+.Cards-tabs__items h3 {
+  font-size: 20px;
+  font-weight: normal;
+  padding: 14px 0px;
+}
+
+.Cards-tabs__items__paragraph {
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.Cards-tabs__items__p {
+  font-size: 11px;
+  font-weight: bolder;
+  color: rgb(184, 181, 181);
+}
+
+.Cards-tabs__items button {
+  width: 100%;
+  height: 35px;
+  box-shadow: 1px 1px 2px #0066b2;
+  color: #0066b2;
+  border: 1px solid #0066b2;
+  border-radius: 4px;
+  margin-top: auto;
+  background: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .Cards-tabs {
+    grid-template-columns: 1fr;
+  }
+
+  .tab-item {
+    margin-right: 10px;
+    font-size: 12px;
+  }
+}
