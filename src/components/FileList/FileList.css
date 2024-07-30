@@ -1,0 +1,111 @@
+.File__list {
+  width: 900px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 100px auto;
+  gap: 15px;
+}
+
+.card-content {
+  border: 1px solid #c7c4c4;
+  border-radius: 6px;
+  height: 300px;
+  padding: 18px;
+}
+
+.card-content__section {
+  display: flex;
+  margin-top: 6px;
+}
+
+.card-content__section div {
+  padding: 2px;
+  width: 95px;
+  height: 24px;
+  border-radius: 4px;
+  text-align: center;
+  color: white;
+  margin: 5px 11px 0 0;
+  font-size: 12px;
+}
+
+.type-new {
+  background: #429972;
+}
+
+.type-fix {
+  background: #d9534f;
+}
+
+.type-improvement {
+  background: #5bc0de;
+}
+
+.card-content__section img {
+  width: 25px;
+  height: 25px;
+  border: none;
+  padding: 2px;
+}
+
+.card-content__section p,
+.card-content__p p {
+  align-items: center;
+  font-weight: bold;
+  display: flex;
+}
+
+.Paragraph {
+  margin: 20px 0 38px 0;
+  color: #a9a3a3;
+}
+
+.card-content__button {
+  background: white;
+  width: 130px;
+  height: 43px;
+  border: 2px solid #28acd6;
+  border-radius: 24px;
+  color: #28acd6;
+}
+.card-content__button:hover {
+  background-color: #28acd6;
+  color: white;
+}
+
+.card-content__p {
+  display: flex;
+}
+
+.card-content__p p {
+  font-weight: normal;
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+@media only screen and (max-width: 600px) {
+  .File__list {
+    width: 370px;
+    grid-template-columns: 1fr;
+  }
+
+  .card-content__section div {
+    height: auto;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+
+  .card-content__section img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .card-content__section p {
+    font-size: 14px;
+  }
+
+  .card-content__p p {
+    font-size: 16px;
+    margin-right: 6px;
+  }
+}

@@ -1,0 +1,43 @@
+.Task__list {
+  width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 38px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.Task__list > * {
+  width: 260px;
+  display: flex;
+  gap: 12px;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 35px;
+  padding: 6px;
+  margin: 5px;
+}
+
+p {
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+  .Task__list {
+    width: 370px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Task__list > * {
+    width: 100%;
+    flex-direction: column;
+  }
+  p {
+    font-size: 14px;
+  }
+}

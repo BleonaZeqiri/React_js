@@ -5,7 +5,7 @@ const TaskItem = ({ item }) => {
     <div>
       <img src={item.img} alt="Dog" />
       <div>
-        <h4>{item.name}</h4>
+        <h4>{item.title}</h4>
         <p>{item.desc}</p>
       </div>
     </div>
