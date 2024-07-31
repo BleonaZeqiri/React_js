@@ -1,0 +1,89 @@
+.App {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  background: rgb(245, 245, 245);
+  height: 300px;
+}
+.App h1 {
+  padding: 30px;
+}
+.modalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 700px;
+  max-width: 80%;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  float: right;
+}
+
+.body p {
+  margin: 15px 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+}
+.title h6 {
+  color: #1fb1e8;
+}
+.cancelBtn,
+.confirmBtn {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.cancelBtn {
+  background: #f0f0f0;
+}
+
+.confirmBtn {
+  background: #007bff;
+  color: white;
+}
+.body-content,
+.body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.body-content__background {
+  width: 56px;
+  height: 28px;
+  border-radius: 5px;
+  margin: 0px 5px;
+  border: 1px solid darkgrey;
+}
+.openModalBtn {
+  width: 204px;
+  height: 53px;
+  color: white;
+  background: #2096cc;
+  border: 1px solid #9dd5ef;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}

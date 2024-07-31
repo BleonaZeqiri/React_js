@@ -10,7 +10,7 @@ const FaqItem = () => {
   const [selected, setSelected] = useState(null);
   const [showFaq, setShowFaq] = useState(false);
 
-  const { tabTitle, img, paragraph, cards } = faqData;
+  const { tabTitle, paragraph, cards } = faqData;
 
   const toggleFaq = () => {
     setShowFaq(!showFaq);
