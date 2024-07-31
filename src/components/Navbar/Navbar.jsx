@@ -21,9 +21,9 @@ function Navbar() {
         <Link to="/" onClick={closeNavbar}>
           Home
         </Link>
-        <Link to="/about" onClick={closeNavbar}>
+        {/* <Link to="/about" onClick={closeNavbar}>
           About
-        </Link>
+        </Link> */}
         <Link to="/first-task" onClick={closeNavbar}>
           FirstTask
         </Link>
@@ -31,7 +31,7 @@ function Navbar() {
           SecondTask
         </Link>
         <Link to="/third-task" onClick={closeNavbar}>
-          THirdTask
+          ThirdTask
         </Link>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />

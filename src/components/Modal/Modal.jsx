@@ -5,7 +5,6 @@ import "../Modal/Modal.css";
 const Modal = () => {
   const [openModal, setOpenModal] = useState(false);
 
-  // Define the modals data
   const modalsData = [
     {
       paragraph: "Font Color",
@@ -13,7 +12,15 @@ const Modal = () => {
     },
     {
       paragraph: "Background Color",
+      background: "#EEEEEE",
+    },
+    {
+      paragraph: "Background Color",
       background: "#FFFFFF",
+    },
+    {
+      paragraph: "Background Color",
+      background: "#323232",
     },
   ];
 

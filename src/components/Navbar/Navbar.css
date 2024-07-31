@@ -60,7 +60,7 @@ nav {
 
   header nav {
     position: fixed;
-    top: -100vh;
+    top: 0;
     left: 0;
     height: 100%;
     width: 100%;
@@ -70,11 +70,12 @@ nav {
     justify-content: center;
     gap: 1.5rem;
     background-color: #2c3d56;
-    transition: 1s;
+    transition: transform 0.3s ease;
+    transform: translateY(-100%);
   }
 
   header .responsive_nav {
-    transform: translateY(100vh);
+    transform: translateY(0);
   }
 
   nav .nav-close-btn {

@@ -61,7 +61,7 @@
 }
 
 .confirmBtn {
-  background: #007bff;
+  background: #2c3d56;
   color: white;
 }
 .body-content,
@@ -81,8 +81,8 @@
   width: 204px;
   height: 53px;
   color: white;
-  background: #2096cc;
-  border: 1px solid #9dd5ef;
+  background: #2c3d56;
+  border: 1px solid white;
   border-radius: 5px;
   font-size: 15px;
   cursor: pointer;
