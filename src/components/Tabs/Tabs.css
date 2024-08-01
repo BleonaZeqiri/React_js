@@ -1,3 +1,9 @@
+.second-task {
+  background-color: rgb(245, 245, 245);
+}
+.tab-panel.active {
+  display: block;
+}
 .tabs-container {
   width: 90%;
   max-width: 1000px;
@@ -5,38 +11,33 @@
   margin: auto;
 }
 
-.tabs {
+.tabs-container__content {
   display: flex;
   cursor: pointer;
   flex-wrap: wrap;
 }
 
-.tab-item {
+.tabs-container__item {
   padding: 10px;
   margin-right: 18px;
   font-size: 13px;
 }
 
-.tab-item.active {
+.tabs-container__item.active {
   border-bottom: 1px solid #3786b0;
 }
 
-.tab-panel.active {
+.active {
   display: block;
 }
-
-.second-task {
-  background-color: rgb(245, 245, 245);
-}
-
-.Cards-tabs {
+.tab-content__cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   margin: 30px auto;
   gap: 25px;
 }
 
-.Cards-tabs__items {
+.tab-content__items {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,24 +47,23 @@
   height: 205px;
 }
 
-.Cards-tabs__items h3 {
-  font-size: 20px;
+.tab-content__items h3 {
   font-weight: normal;
   padding: 14px 0px;
 }
 
-.Cards-tabs__items__paragraph {
-  font-size: 14px;
+.tab-content__paragraph {
+  font-size: 13px;
   font-weight: bolder;
 }
 
-.Cards-tabs__items__p {
+.tab-content__p {
   font-size: 11px;
   font-weight: bolder;
   color: rgb(184, 181, 181);
 }
 
-.Cards-tabs__items button {
+.tab-content__items button {
   width: 100%;
   height: 35px;
   box-shadow: 1px 1px 2px #0066b2;
@@ -74,17 +74,17 @@
   background: white;
   cursor: pointer;
 }
-.Cards-tabs__items button:hover {
+.tab-content__items button:hover {
   background: #0066b2;
   color: white;
 }
-@media only screen and (max-width: 600px) {
-  .Cards-tabs {
-    grid-template-columns: 1fr;
-  }
 
-  .tab-item {
+@media only screen and (max-width: 600px) {
+  .tabs-container__item {
     margin-right: 10px;
     font-size: 12px;
+  }
+  .tab-content__tabs {
+    grid-template-columns: 1fr;
   }
 }

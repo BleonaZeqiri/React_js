@@ -1,9 +1,10 @@
 import React from "react";
 import { TabSection } from "../components/TabSection/TabSection";
-import Faq from "../components/Faq/Faq";
 import FaqItem from "../components/FaqItem/FaqItem";
-import "../components/Faq/Faq.css";
+import Faq from "../components/Faq/Faq";
+
 import "../components/FaqItem/FaqItem.css";
+import "../components/Faq/Faq.css";
 
 export const SecondTask = () => {
   return (

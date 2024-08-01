@@ -21,9 +21,6 @@ function Navbar() {
         <Link to="/" onClick={closeNavbar}>
           Home
         </Link>
-        {/* <Link to="/about" onClick={closeNavbar}>
-          About
-        </Link> */}
         <Link to="/first-task" onClick={closeNavbar}>
           FirstTask
         </Link>

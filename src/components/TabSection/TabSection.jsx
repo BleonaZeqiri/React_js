@@ -1,6 +1,6 @@
 import React from "react";
-import Tab from "../../components/Tabs/Tab";
 import Tabs from "../../components/Tabs/Tabs.jsx";
+import Tab from "../../components/Tabs/Tab";
 const tabs = [
   {
     aKey: "Domains",

@@ -1,10 +1,10 @@
-import dog from "../../assets/images/dog.png"; // Ensure you import the image properly
+import dog from "../../assets/images/dog.png";
 
 const FaqData = {
   aKey: "FAQ",
   tabTitle: "About Us",
   img: dog,
-  paragraph: "4 articles in 1 topic", // Corrected to be a string
+  paragraph: "4 articles in 1 topic",
   cards: [
     {
       question: "Why park a domain name in Parkname?",

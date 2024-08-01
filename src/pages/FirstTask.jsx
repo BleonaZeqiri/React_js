@@ -1,6 +1,6 @@
 import React from "react";
-import { TaskList } from "../components/TaskList/TaskList";
 import { FileList } from "../components/FileList/FilesList";
+import { TaskList } from "../components/TaskList/TaskList";
 
 export const FirstTask = () => {
   return (

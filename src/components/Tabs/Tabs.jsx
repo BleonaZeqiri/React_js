@@ -6,11 +6,13 @@ const Tabs = ({ activeKey, children }) => {
 
   return (
     <div className="tabs-container">
-      <div className="tabs">
+      <div className=" tabs-container__content">
         {children.map((item) => (
           <div
             key={item.props.aKey}
-            className={`tab-item ${key === item.props.aKey ? "active" : ""}`}
+            className={`tabs-container__item ${
+              key === item.props.aKey ? "active" : ""
+            }`}
             onClick={() => setKey(item.props.aKey)}
           >
             {item.props.tabTitle}
@@ -20,12 +22,12 @@ const Tabs = ({ activeKey, children }) => {
       <div className="tab-content">
         {children.map((item) =>
           key === item.props.aKey ? (
-            <div key={item.props.aKey} className="Cards-tabs">
+            <div key={item.props.aKey} className="tab-content__cards">
               {item.props.cards.map((card, index) => (
-                <div key={index} className="Cards-tabs__items">
+                <div key={index} className="tab-content__items">
                   <h3>{card.cardTitle}</h3>
-                  <p className="Cards-tabs__items__paragraph">{card.price}</p>
-                  <p className="Cards-tabs__items__p">{card.content}</p>
+                  <p className=" tab-content__paragraph">{card.price}</p>
+                  <p className=" tab-content__p">{card.content}</p>
 
                   <button>Buy Now</button>
                 </div>
