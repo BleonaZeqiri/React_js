@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import LocaleContext from "../LocaleContext";
 import { Link } from "react-router-dom";
 import i18n from "../i18n";
-import CustomDropdown from "./CustomDropdown";
+import CustomDropdown from "../CustomDropdown/CustomDropdown";
 import "./Navbar.css";
 
 function Loading() {

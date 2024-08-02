@@ -3,6 +3,7 @@ import albanian_flag from "../../assets/images/albanianflag.png";
 import american_flag from "../../assets/images/american-flag.png";
 import france_flag from "../../assets/images/France-flag.png";
 import "./CustomDropdown.css";
+
 const flags = {
   en: american_flag,
   fr: france_flag,
@@ -27,18 +28,24 @@ const CustomDropdown = ({ locale, handleChange }) => {
     setIsOpen(false);
   };
 
+  const selectedLanguage = languages.find((lang) => lang.code === locale);
+
   return (
     <div className="dropdown">
       <button onClick={toggleDropdown} className="dropdown-toggle">
-        <img src={flags[locale]} alt={`${locale} flag`} className="flag" />
-        {languages.find((lang) => lang.code === locale).label}
+        <img
+          src={flags[locale] || flags["en"]}
+          alt={`${locale} flag`}
+          className="flag"
+        />
+        {selectedLanguage ? selectedLanguage.label : "Select Language"}
       </button>
       {isOpen && (
         <ul className="dropdown-menu">
           {languages.map((lang) => (
             <li key={lang.code} onClick={() => selectLanguage(lang.code)}>
               <img
-                src={flags[lang.code]}
+                src={flags[lang.code] || flags["en"]}
                 alt={`${lang.label} flag`}
                 className="flag"
               />
