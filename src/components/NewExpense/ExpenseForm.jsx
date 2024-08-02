@@ -1,17 +1,30 @@
-import React, { useState, Suspense } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import { useTranslation } from "react-i18next";
 import LocaleContext from "../LocaleContext";
 import i18n from "../i18n";
 
 import "./ExpenseForm.css";
+
 function Loading() {
-  return <>Loading...</>;
+  return <div>Loading...</div>;
 }
 
 const ExpenseForm = (props) => {
   const [enteredTitle, setEnteredTitle] = useState("");
   const [enteredAmount, setEnteredAmount] = useState("");
   const [enteredDate, setEnteredDate] = useState("");
+  const [locale, setLocale] = useState(i18n.language);
+
+  const { t } = useTranslation();
+
+  useEffect(() => {
+    const handleLanguageChange = (lng) => setLocale(i18n.language);
+    i18n.on("languageChanged", handleLanguageChange);
+
+    return () => {
+      i18n.off("languageChanged", handleLanguageChange);
+    };
+  }, []);
 
   const titleChangeHandler = (event) => {
     setEnteredTitle(event.target.value);
@@ -34,14 +47,6 @@ const ExpenseForm = (props) => {
     setEnteredTitle("");
     setEnteredAmount("");
     setEnteredDate("");
-  };
-
-  const { t } = useTranslation();
-  const [locale, setLocale] = useState(i18n.language);
-  i18n.on("languageChanged", (lng) => setLocale(i18n.language));
-
-  const handleChange = (event) => {
-    i18n.changeLanguage(event.target.value);
   };
 
   return (

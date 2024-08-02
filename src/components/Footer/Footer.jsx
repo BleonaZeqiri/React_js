@@ -12,9 +12,6 @@ const Footer = () => {
   const [locale, setLocale] = useState(i18n.language);
   i18n.on("languageChanged", (lng) => setLocale(i18n.language));
 
-  const handleChange = (event) => {
-    i18n.changeLanguage(event.target.value);
-  };
   return (
     <LocaleContext.Provider value={{ locale, setLocale }}>
       <Suspense fallback={<Loading />}>

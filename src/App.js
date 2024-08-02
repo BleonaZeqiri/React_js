@@ -1,4 +1,3 @@
-import React, { Suspense, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { SecondTask } from "./pages/SecondTask";
 import Navbar from "./components/Navbar/Navbar";
