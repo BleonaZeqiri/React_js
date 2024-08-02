@@ -1,10 +1,11 @@
 import React, { Suspense, useState, useRef } from "react";
-import { useTranslation } from "react-i18next";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import "./Navbar.css";
-import i18n from "../i18n";
+import { useTranslation } from "react-i18next";
 import LocaleContext from "../LocaleContext";
+import { Link } from "react-router-dom";
+import i18n from "../i18n";
+import CustomDropdown from "./CustomDropdown";
+import "./Navbar.css";
 
 function Loading() {
   return <>Loading...</>;
@@ -47,11 +48,7 @@ function Navbar() {
             <Link to="/third-task" onClick={closeNavbar}>
               {t("Page-Third-Task")}
             </Link>
-            <select id="language-select" value={locale} onChange={handleChange}>
-              <option value="en">English</option>
-              <option value="fr">French</option>
-              <option value="al">Albanian</option>
-            </select>
+            <CustomDropdown locale={locale} handleChange={handleChange} />
             <button className="nav-btn nav-close-btn" onClick={closeNavbar}>
               <FaTimes />
             </button>

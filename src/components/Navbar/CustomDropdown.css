@@ -1,0 +1,45 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+  color: black;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dropdown-toggle .flag,
+.dropdown-menu .flag {
+  width: 20px;
+  height: 15px;
+  margin-right: 10px;
+  border: none;
+  padding: 0;
+  border-radius: 2px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 0;
+  margin: 0;
+  width: 150px;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  display: flex;
+  padding: 10px;
+  cursor: pointer;
+}
+.dropdown-toggle {
+  color: white;
+}

@@ -8,5 +8,11 @@
   "quick-Links_footer": "Quick Links",
 
   "social-Media_footer": "Social Media ",
-  "Copyright_footer": "Copyright @ 2024 Bleona. All Rights Reserved"
+  "Copyright_footer": "Copyright @ 2024 Bleona. All Rights Reserved",
+  "Title_expenses": "Title",
+  "Amount_expenses": "Amount",
+  "Date_expenses": "Date",
+  "Add-Expense": "Add Expense",
+  "Filter-by-year": "Filter by year",
+  "Open-Modal_modal": "Open Modal"
 }

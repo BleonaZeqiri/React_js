@@ -7,5 +7,11 @@
   "contact_footer": "Kontakti",
   "quick-Links_footer": "Lidhjet e Shpejta",
   "social-Media_footer": "Mediat Sociale ",
-  "Copyright_footer": "E drejta e autorit @ 2024 Bleona. Të gjitha të drejtat e rezervuara"
+  "Copyright_footer": "E drejta e autorit @ 2024 Bleona. Të gjitha të drejtat e rezervuara",
+  "Title_expenses": "Titulli",
+  "Amount_expenses": "Shuma",
+  "Date_expenses": "Data",
+  "Add-Expense": "Shto shpenzimet ",
+  "Filter-by-year": "Filtro sipas vitit",
+  "Open-Modal_modal": "Hap Modalin"
 }

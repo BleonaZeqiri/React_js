@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
-import "../Footer/Footer.css";
 import React, { Suspense, useState } from "react";
 import { useTranslation } from "react-i18next";
-import i18n from "../i18n";
 import LocaleContext from "../LocaleContext";
+import { Link } from "react-router-dom";
+import i18n from "../i18n";
+import "../Footer/Footer.css";
 function Loading() {
   return <>Loading...</>;
 }
