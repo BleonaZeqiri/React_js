@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { SecondTask } from "./pages/SecondTask";
 import Navbar from "./components/Navbar/Navbar";
@@ -11,6 +11,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Navbar />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/first-task" element={<FirstTask />} />
