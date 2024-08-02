@@ -1,0 +1,30 @@
+footer {
+  background: #2c3d56;
+  padding-top: 1rem;
+  color: white;
+}
+.footer-content {
+  margin: 6rem auto;
+  width: min(90%, 55rem);
+  display: grid;
+  grid-auto-flow: row;
+  gap: 5em;
+}
+.footer-content__items a {
+  display: grid;
+  text-decoration: none;
+  color: white;
+}
+.footer-content__h4 {
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 51px;
+  background: #232e3e;
+  display: flex;
+}
+@media (min-width: 55em) {
+  .footer-content {
+    grid-auto-flow: column;
+  }
+}

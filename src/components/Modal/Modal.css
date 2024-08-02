@@ -3,10 +3,11 @@
   justify-content: center;
   text-align: center;
   background: rgb(245, 245, 245);
-  height: 300px;
+  height: 700px;
 }
 .App h1 {
-  padding: 30px;
+  padding: 0;
+  margin: auto;
 }
 .modalBackground {
   position: fixed;

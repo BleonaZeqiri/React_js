@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import { FirstTask } from "./pages/FirstTask";
 import ThirdTask from "./pages/ThirdTask";
 import Home from "./pages/Home";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/second-task" element={<SecondTask />} />
         <Route path="/third-task" element={<ThirdTask />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };
